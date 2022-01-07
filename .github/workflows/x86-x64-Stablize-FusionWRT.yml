@@ -3,8 +3,8 @@ name: x86-x64-Stablize-FusionWRT
 on:
   repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: 0 17 * * *
+  #schedule:
+  #  - cron: 0 17 * * *
   # watch:
   #   types: started
 
@@ -14,9 +14,9 @@ env:
   CONFIG_FILE: configs/lean/lean_stable.config
   DIY_SH: scripts/lean.sh
   IPV6MOD_IN_FIRMWARE: true
-  KMODS_IN_FIRMWARE: true
-  UPLOAD_WETRANSFER: true
-  UPLOAD_COWTRANSFER: true
+  KMODS_IN_FIRMWARE: false
+  UPLOAD_WETRANSFER: false
+  UPLOAD_COWTRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
