@@ -14,9 +14,9 @@ env:
   CONFIG_FILE: configs/lean/lean.config
   DIY_SH: scripts/lean.sh
   IPV6MOD_IN_FIRMWARE: true
-  KMODS_IN_FIRMWARE: true
-  UPLOAD_WETRANSFER: true
-  UPLOAD_COWTRANSFER: true
+  KMODS_IN_FIRMWARE: false
+  UPLOAD_WETRANSFER: false
+  UPLOAD_COWTRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
@@ -180,7 +180,7 @@ jobs:
   Upload:
     needs: [Build]
     runs-on: ubuntu-20.04
-    if: github.repository == 'DHDAXCW/FusionWRT_x86_x64'
+    if: github.repository == 'fe6520/FusionWRT_x86_x64'
     steps:
       - name: Checkout
         uses: actions/checkout@main
