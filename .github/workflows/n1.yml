@@ -1,4 +1,4 @@
-name: x86-x64-formal-edition-FusionWRT
+name: n1.config
 
 on:
   repository_dispatch:
