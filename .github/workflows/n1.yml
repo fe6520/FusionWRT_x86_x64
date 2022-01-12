@@ -12,7 +12,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: n1.config
-  DIY_SH: diy-part2.sh
+  DIY_SH: scripts/diy-part2.sh
   IPV6MOD_IN_FIRMWARE: true
   KMODS_IN_FIRMWARE: false
   UPLOAD_WETRANSFER: false
