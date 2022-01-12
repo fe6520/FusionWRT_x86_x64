@@ -10,11 +10,11 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 #
-sed -i '/uci commit system/i\uci set system.@system[0].hostname='QcWrt'' package/lean/default-settings/files/zzz-default-settings
-sed -i "s/OpenWrt /Qc /g" package/lean/default-settings/files/zzz-default-settings
+#sed -i '/uci commit system/i\uci set system.@system[0].hostname='QcWrt'' package/lean/default-settings/files/zzz-default-settings
+#sed -i "s/OpenWrt /Qc /g" package/lean/default-settings/files/zzz-default-settings
 
 # 替换默认IP
-sed -i 's#192.168.1.1#192.168.1.16#g' package/base-files/files/bin/config_generate
+#sed -i 's#192.168.1.1#192.168.1.16#g' package/base-files/files/bin/config_generate
 
 # 添加额外软件包
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
